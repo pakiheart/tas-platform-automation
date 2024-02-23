@@ -25,8 +25,8 @@ locals {
         ops_manager_subnet_id                 = aws_subnet.public-subnet[0].id
         ops_manager_public_ip                 = aws_eip.ops-manager.public_ip
         ops_manager_dns                       = aws_route53_record.ops-manager.name
-        ops_manager_iam_user_access_key       = aws_iam_access_key.ops-manager.id
-        ops_manager_iam_user_secret_key       = aws_iam_access_key.ops-manager.secret
+#        ops_manager_iam_user_access_key       = aws_iam_access_key.ops-manager.id
+#        ops_manager_iam_user_secret_key       = aws_iam_access_key.ops-manager.secret
         ops_manager_iam_instance_profile_name = aws_iam_instance_profile.ops-manager.name
         ops_manager_key_pair_name             = aws_key_pair.ops-manager.key_name
         ops_manager_ssh_public_key            = tls_private_key.ops-manager.public_key_openssh
@@ -71,7 +71,7 @@ locals {
         droplets_bucket_name = aws_s3_bucket.droplets-bucket.bucket
         packages_bucket_name = aws_s3_bucket.packages-bucket.bucket
         resources_bucket_name = aws_s3_bucket.resources-bucket.bucket
-        tas_blobstore_iam_instance_profile_name = aws_iam_instance_profile.pas-blobstore.name
+        #tas_blobstore_iam_instance_profile_name = aws_iam_instance_profile.pas-blobstore.name
 
         ssh_lb_security_group_id = aws_security_group.ssh-lb.id
         ssh_lb_security_group_name = aws_security_group.ssh-lb.name
