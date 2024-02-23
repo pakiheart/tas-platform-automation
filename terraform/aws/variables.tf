@@ -52,12 +52,6 @@ variable "pas_subnet_cidrs" {
   type        = list
 }
 
-variable "pks_subnet_cidrs" {
-  default     = ["10.0.12.0/24", "10.0.13.0/24", "10.0.14.0/24"]
-  description = "The list of CIDRs for the PKS subnet. Number of CIDRs MUST match the number of AZs."
-  type        = list
-}
-
 variable "services_subnet_cidrs" {
   default     = ["10.0.8.0/24", "10.0.9.0/24", "10.0.10.0/24"]
   description = "The list of CIDRs for the Services subnet. Number of CIDRs MUST match the number of AZs."
