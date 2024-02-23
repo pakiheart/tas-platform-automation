@@ -5,7 +5,7 @@ resource "aws_internet_gateway" "gw" {
 resource "aws_eip" "nat" {
   count = length(var.availability_zones)
 
-  vpc = true
+  domain  = "vpc"
 
   tags = merge(
     var.tags,

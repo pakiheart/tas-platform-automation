@@ -6,6 +6,9 @@ variable "secret_key" {
   type = string
 }
 
+variable "session_token" {
+  type = string
+}
 variable "environment_name" {
   type = string
 }

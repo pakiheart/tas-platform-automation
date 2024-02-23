@@ -7,7 +7,7 @@ resource "aws_route" "nat-gateway-route" {
   count = length(var.availability_zones)
 
   route_table_id         = element(aws_route_table.deployment[*].id, count.index)
-  nat_gateway_id         = aws_nat_gateway.nat[0].id
+  nat_gateway_id         = element(aws_nat_gateway.nat[*].id, count.index)
   destination_cidr_block = "0.0.0.0/0"
 }
 

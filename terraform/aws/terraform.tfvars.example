@@ -2,8 +2,9 @@ environment_name = "YOUR-ENVIRONMNET-NAME"
 
 access_key = "YOUR-AWS-ACCESS-KEY"
 secret_key = "YOUR-AWS-SECRET-KEY"
+session_token = "YOUR-AWS-SESSION-TOKEN"
 
 region = "YOUR-AWS-REGION"
-availability_zones = ["us-west-2a", "us-west-2b", "us-west-2c"]
+availability_zones = ["YOUR-AWS-AZ-1", "YOUR-AWS-AZ-2", "YOUR-AWS-AZ-3"]
 
-hosted_zone = "example.com."
+hosted_zone = "example.com"
